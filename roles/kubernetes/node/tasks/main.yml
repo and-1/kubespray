@@ -18,7 +18,7 @@
     - kubelet
 
 - import_tasks: nginx-proxy.yml
-  when: is_kube_master == false and loadbalancer_apiserver_localhost
+  when: loadbalancer_apiserver_localhost
   tags:
     - nginx
 
